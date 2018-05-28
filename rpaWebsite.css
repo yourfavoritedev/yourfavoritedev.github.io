@@ -87,7 +87,7 @@ body a:visited{
 #openingContent{
 	min-height: 500px;
 	max-height: 1000px;
-	background-image: url("https://i.imgur.com/RmA6lj8.jpg");
+	background-image: url("mainContentbg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -373,7 +373,7 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: left;
-	background-image: url("https://i.imgur.com/RmA6lj8.jpg");
+	background-image: url("mainContentbg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
