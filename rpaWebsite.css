@@ -206,6 +206,7 @@ input{
 
 #rpaServices{
 	background:#0a172b;
+	overflow-x: hidden;
 }
 
 .serviceHeader{
@@ -222,6 +223,7 @@ input{
 .serviceDesc{
 	font-size: 16px;
 	font-weight: normal;
+	overflow-x: hidden;
 }
 
 #service1, #service2, #service3, #service4{
