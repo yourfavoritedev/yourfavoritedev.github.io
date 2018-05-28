@@ -269,6 +269,11 @@ input{
 	 transition: background-color 0.3s ease-out;
 }
 
+div[class="col-sm-3 col-xs-12 thumbnail"]{
+	overflow-x: hidden;
+}
+
+
 #latestNews{
 	background:#0a172b;
 	color: white;
