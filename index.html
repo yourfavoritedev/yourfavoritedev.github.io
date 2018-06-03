@@ -2,49 +2,46 @@
 <html>
 <head>
 	<title>Your Favorite Dev</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">	
 	<link rel="stylesheet" type="text/css" href="mywebsite.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto|Ubuntu|Nunito|Exo" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="mylogofavicon.png">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div id="funBanner">
-	<p>
-		<a id="bannerLink" href="">If you love dogs, I'll be posting a fun picture of one every week. (Click here to check it out.)</a>
+	<p><a id="bannerLink" href="">If you love dogs, I'll be posting a fun picture of one every week. (Click here to check it out.)</a>
 	</p>
 </div>
 
 <div id="mainHeader">
-	<table id="siteMenu">
-		<thead>
-			<th id="logoCell">
-				<a href=""><img id="logo" src="mylogo.png"></a>__________________________________________________________________________________
-			</th>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="bootstrap-override-navbar-brand" href="https://sony-rpa.github.io/"><img src="mylogo.png"></a>
+	    </div>
 
-			<th class="menuField">
-				<a class="menuLink" href="">HOME</a>
-			</th>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="navbar-collapse">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">HOME</a></li>
+	        <li><a href="#">Portfolio</a></li>
+	        <li><a href="#">Blog</a></li>
+	        <li><a href="#">Resume</a></li>
+	        <li><a href="#">LinkedIn</a></li>
+	        <li id="contactBtn"><a href="#">Contact</i></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
 
-			<th class="menuField">
-				<a class="menuLink" href="">PORTFOLO</a>
-			</th>
-			<th class="menuField">
-				<a class="menuLink" href="">BLOG</a>
-			</th>
-
-			<th class="menuField">
-				<a class="menuLink" href="">RESUME</a>
-			</th>
-
-			<th class="menuField">
-				<a class="menuLink" href="https://www.linkedin.com/in/ngochristopher/">LINKEDIN</a>
-			</th>
-
-			<th class="menuField">
-				<a class="menuLink" href="">CONTACT</a>
-			</th>
-
-		</thead>
-	</table>
+	  </div><!-- /.container-fluid -->
+	</nav>
 
 		<p id="sloganTop">This is your brand in the making</p>
 		<p id="sloganBottom">TOGETHER WE CAN BUILD <br> SOMETHING AWESOME </p>
@@ -58,124 +55,73 @@
 		<a id="playButton" href="">PLAY</a>
 	</p>
  -->
-
 </div>
 
 <div id="mainContent">
-	<p class="strongTextLight">DESIGN. ANALYZE. CODE.</p>
-
-	<p>Let's create an amazing website. Whether you're a small-business owner, blogger or entreprenuer, I can help you captivate your audience. So give me a call or an email. Let's level-up and bring your ideas into reality.
-	 </p>
+	<div class="container">
+		<h2>DESIGN. ANALYZE. CODE.</h2>
+		<p>Let's create an amazing website. Whether you're a small-business owner, blogger or entreprenuer, I can help you captivate your audience. So give me a call or an email. Let's level-up and bring your ideas into reality.
+		 </p>
+	</div>
 </div>
 
 
 <div id="servicesProvided">
-	<p class="strongTextDark">I BUILD INTERFACES. DESIGN CONTENT. SETUP DATABASES.<br>
-	AND MORE. ALL FROM SCRATCH.</p>
-
-<table id="servicesTable">
-	<thead>
-		<tr>
-			<th class="service">
+	<div class="container">
+		<h2>I BUILD INTERFACES. DESIGN CONTENT. SETUP DATABASES. ALL FROM SCRATCH.</h2>
+		<div class="row">
+			<div class="col-sm-4 col-xs-12">
 				<img src="codeArt.png">
-			</th>
-
-			<th class="service">
+				<h3>FAST CODE</h3>
+				<p>We want to create a fast and friendly website that is easy for your visitors to explore and enjoy.</p>
+			</div>
+			<div class="col-sm-4 col-xs-12">
 				<img src="designArt.png">
-			</th>
-
-			<th class="service">
+				<h3>CLEAN DESIGN</h3>
+				<p>Together we will build a brand that matches your personality and have the right content to support it.</p>
+			</div>
+			<div class="col-sm-4 col-xs-12">
 				<img src="dataArt.png">
-			</th>
-		</tr>
-	</thead>
-
-	<tbody>
-		<tr>
-			<td>FAST CODE</td>
-			<td>CLEAN DESIGN</td>
-			<td>NEW INSIGHTS</td>
-		</tr>
-
-		<tr>
-			<td class="serviceDesc">
-				We want to create a fast and friendly website that is easy for your visitors to explore and enjoy.
-			</td>
-			<td class="serviceDesc">
-				Together we will build a brand that matches your personality and have the right content to support it.</td>
-			<td class="serviceDesc">
-				Learn more about what your audience wants so that we can continue to grow and adapt for the future.
-			</td>
-		</tr>
-	</tbody>
-</table>
+				<h3>NEW INSIGHTS</h3>
+				<p>Learn more about what your audience wants so that we can continue to grow and adapt for the future.</p>				
+			</div>
+		</div>
 
 
-<form class="paddingTop paddingBottom">
-	<button id="portfolioButton">SEE POFTFOLIO</button>
-</form>
+	<form id="portfolioBtnForm">
+		<button id="portfolioButton">SEE POFTFOLIO</button>
+	</form>
 
+	</div>
 </div>
 
 <div id="closingBanner">
-	<p class="strongTextWhite">find your brand. unlock your <span id="unlockPotential">potential.</span></p>
-
-	<table id="closingMenu">
-		<thead>
-
-			<th class="menuField">
-				<a class="menuLink" href="">HOME</a>
-			</th>
-
-			<th class="menuField">
-				<a class="menuLink" href="">PORTFOLO</a>
-			</th>
-			<th class="menuField">
-				<a class="menuLink" href="">BLOG</a>
-			</th>
-
-			<th class="menuField">
-				<a class="menuLink" href="">RESUME</a>
-			</th>
-
-			<th class="menuField">
-				<a class="menuLink" href="https://www.linkedin.com/in/ngochristopher/">LINKEDIN</a>
-			</th>
-
-			<th class="menuField">
-				<a class="menuLink" href="">CONTACT</a>
-			</th>
-
-		</thead>
-	</table>
-
-
-<p class="feintText">© 2018 Christopher Ngo. All rights reserved. Web Developer & Founder of ALPHA</p>
-
-<table id="mediaTable">
-	<thead>
-		<th class="mediaField">
-			<a href=""><img class="smallIMG" src="instaArt.png"></a>
-		</th>
-		<th class="mediaField">
-			<a href=""><img class="smallIMG" src="facebookArt.png"></a>
-		</th>
-		<th class="mediaField">
-			<a href=""><img class="smallIMG" src="linkedinArt.png"></a>
-		</th>
-		<th class="mediaField">
-			<a href=""><img class="smallIMG" src="mailArt.png"></a>
-		</th>
-		<th class="mediaField">
-			<a href=""><img class="smallIMG" src="gitArt.png"></a>
-		</th>
-
-	</thead>
-</table>
-
+	<div class="container">
+	<h2>Find your brand. unlock your <span id="unlockPotential">Potential.</span></h2>
+	<div class="navTable">
+		<div class="col-sm-2 col-xs-6"><a class="navBtn" href="">HOME</a></div>
+		<div class="col-sm-2 col-xs-6"><a class="navBtn" href="">PORTFOLO</a></div>
+		<div class="col-sm-2 col-xs-6"><a class="navBtn" href="">BLOG</a></div>
+		<div class="col-sm-2 col-xs-6"><a class="navBtn" href="">RESUME</a></div>
+		<div class="col-sm-2 col-xs-6"><a class="navBtn" href="">LINKEDIN</a></div>
+		<div class="col-sm-2 col-xs-6"><a class="navBtn" href="">CONTACT</a></div>
+		<div class="feintText">
+			<p>© 2018 Christopher Ngo. All rights reserved. Web Developer & Founder of ALPHA</p>
+		</div>
+		<div class="mediaTable">
+			<a class="mediaField" href=""><img class="smallIMG" src="instaArt.png"></a>
+			<a class="mediaField" href=""><img class="smallIMG" src="facebookArt.png"></a>
+			<a class="mediaField" href=""><img class="smallIMG" src="linkedinArt.png"></a>
+			<a class="mediaField" href=""><img class="smallIMG" src="mailArt.png"></a>
+			<a class="mediaField" href=""><img class="smallIMG" src="gitArt.png"></a>	
+		</div>
+	</div>
+	</div>
 </div>
 
 
 
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

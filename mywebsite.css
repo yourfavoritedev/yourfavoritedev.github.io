@@ -3,7 +3,6 @@ html, body{
 	overflow-x: hidden;
 }
 body{
-	background: #d5ede8;
 	font-family: calibri;
 	margin: 0;
 	text-align: center;
@@ -11,102 +10,104 @@ body{
 
 }
 
+a, a:hover{
+	color: black;
+	text-decoration: none
+}
+
+
+
 #funBanner{
-	margin-top: 0px;
+	padding-top: 8px;
 	background: #d5ede8;
-	vertical-align: middle;
 	font-family: trebuchet ms;
 	overflow-y: hidden;
 	font-size: 14px;
 }
 
-
-#bannerLink, .bannerLink:visited{
-	color: inherit;
-	text-decoration: none;
-
+#mainHeader div[class="container"]{
+	padding-left: 0px;
+	padding-right: 0px;
 }
+
+.navbar-header{
+	margin-bottom: 20px;
+}
+
+.bootstrap-override-navbar-brand{
+	padding-left: 5px;
+	float: left;
+}
+
+.bootstrap-override-navbar-brand img{
+	max-width: 80px;
+}
+
+.navbar-default {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #2eeace;
+	-webkit-transition: color 0.5s ease-out;
+	-moz-transition: color 0.5s ease-out;
+	-o-transition: color 0.5s ease-out;
+	-ms-transition: color 0.5s ease-out;
+	transition: color 0.5s ease-out;
+}
+
+.navbar-default .navbar-toggle {
+    border: solid 2px white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 22px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
 #mainHeader{
 	background-image: url(https://i.imgur.com/kcHxFXT.gif);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	width: 100%;
-	min-height: 730px;
 	margin: 0px;
 }
 
 
-#logoCell{
-	padding-top: 10px;
-	color: rgba(0,0,0,0);
-	-webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-     user-select: none; /*Non-prefixed version, currently*/
-
-}
-
-
-#logo{
-	width: 80px;
-}
-
-#siteMenu{
-	width: auto;
-	margin-left: auto;
-	margin-right: 15px;
-
-}
-
-.menuField{
-	vertical-align: middle;
-	color:white;
-	padding-left: 25px;
-	padding-right: 25px;
-	font-size: 16px;
-	font-family: arial;
-	font-style: bold;
-	-webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-     user-select: none; /*Non-prefixed version, currently*/
-
-}
-
-
-.menuField:hover{
-	color: #2eeace;
-/*	border: 1px white solid;*/
-	-webkit-transition: color 0.5s ease-out;
-	-moz-transition: color 0.5s ease-out;
-	 -o-transition: color 0.5s ease-out;
-	 -ms-transition: color 0.5s ease-out;
-	 transition: color 0.5s ease-out;
-}
-
-
-
-
-.menuLink, .menuLink:visited{
-	color: inherit;
-	text-decoration: none;
-
-}
-
-
-
 #sloganTop{
-	vertical-align: middle;
+	margin-top: 120px;
+	padding-bottom: 10px;
 	color:white;
-/*	text-shadow: 1px 2px 5px #000000;*/
 	font-size: 22px;
 	font-style: italic;
 	font-weight: bold;
 	font-family: serif;
-	margin-top: 130px;
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
@@ -118,8 +119,8 @@ body{
 #sloganBottom{
 	vertical-align: middle;
 	color:white;
-/*	text-shadow: 1px 2px 5px #000000;*/
 	font-size: 60px;
+	line-height: normal;
 	font-weight: bold;
 	font-family: arial;
 	margin-top: 0px;
@@ -132,9 +133,10 @@ body{
 }
 
 #videoContainer{
+	padding-top: 50px;
+	padding-bottom: 150px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 100px;
 }
 
 
@@ -160,20 +162,12 @@ button:hover{
 
 
 #mainContent{
-	background-size: cover;
-	font-size: 30px;
+	font-size: 28px;
 	color: #001528;
-	padding-top: 10px;
+	padding-top: 60px;
 	padding-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
-	overflow-y: hidden;
-
-}
-
-/*#playContainer{
-	text-align: center;
 }
 
 
@@ -193,88 +187,66 @@ button:hover{
 
 #playButton, #playButton:visited{
 	text-decoration: none;
-}*/
+}
 
-
-
-.strongTextLight{
+#mainContent h2{
+	padding-bottom: 30px;
 	color: #009999;
+	font-weight: bolder;
 	font-size: 50px;
-	font-family: impact;
+	font-family: exo;
 	text-shadow: 1px 1px 2px black;
 	text-transform: uppercase;
 }
 
-.strongTextWhite{
-	color: #efefef;
-	font-size: 50px;
-	font-family: impact;
-	text-shadow: 1px px 2px black;
-	text-transform: uppercase;
-}
 
 #servicesProvided{
 	margin-left: auto;
 	margin-right: auto;
-	background: #CCCCCC;
-	padding-top: 30px;
-	padding-bottom: 50px;
+	background: #091a26;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	font-family: exo;
 	overflow-y: hidden;
 	overflow-x: hidden;
-	font-size: 20px;
-	font-family: arial black;
-
+	color: white;
+	text-shadow: 10px 10px 20px black;
 }
 
 
-.strongTextDark{
-	color: black;
+#servicesProvided h2{
+	font-weight: bolder;
 	font-size: 50px;
-	font-family: impact;
-	text-transform: uppercase;
-}
-
-#servicesTable{
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	font-size: 25px;
-	font-family: arial;
-	color:black;
+	padding-bottom: 50px;
 
 }
 
-.service{
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-.serviceDesc{
-	width: 330px;
-	color: #111111;
-	padding: 30px;
-	font-size: 16px;
-	line-height: 170%;
+#servicesProvided h3{
+	padding-bottom: 20px;
+	font-family: ubuntu;
+	font-weight: bolder;
+	font-size: 28px;
 
 }
 
-.paddingTop{
-	padding-top: 30px;
+#servicesProvided p{
+	padding-bottom: 20px;
+	font-size: 20px;
+
+}
+#portfolioBtnForm{
+	padding-top: 50px;
 }
 
-
-.paddingBottom{
-	padding-bottom: 30px;
-}
 #portfolioButton{
-	 border: black 2px solid;
-	 color: black;
+	 border: white 2px solid;
+	 color: white; 
 	 font-size: 16px;
 }
 
 #portfolioButton:hover{
-	background: black;
-	color: white;
+	background: white;
+	color: black;
 	-webkit-transition: color 1.0s ease-out;
 	-moz-transition: color 1.0s ease-out;
 	 -o-transition: color 1.0s ease-out;
@@ -288,16 +260,26 @@ button:hover{
 	background: #1d1f26;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10px;
-	overflow-y: hidden;
-
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
 }
+
+#closingBanner h2{
+	font-family: impact;
+	color: white;
+	font-size: 50px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
 
 #unlockPotential{
 	color: black;
 	font-size: 50px;
 	font-family: impact;
 	text-shadow: 1px 1px 20px black;
+	text-transform: uppercase;
 }
 
 #unlockPotential:hover{
@@ -316,25 +298,31 @@ button:hover{
 	width: auto;
 }
 
-
-.feintText{
-	padding-top: 35px;
-	color: #838cad;
-	font-size: 14px;
+.navBtn{
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
 }
 
+.navBtn:hover{
+	color: #2eeace;
+	-webkit-transition: color 0.5s ease-out;
+	-moz-transition: color 0.5s ease-out;
+	-o-transition: color 0.5s ease-out;
+	-ms-transition: color 0.5s ease-out;
+	transition: color 0.5s ease-out;}
 
-#mediaTable{
-	margin-top: 30px;
+
+
+.navTable{
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.mediaField{
-	max-width: 80px;
-	vertical-align: middle;
-	opacity: 0.5;
-	padding: 5px;
+
+div[class="feintText"] p{
+	padding-top: 50px;
 }
 
 .mediaField:hover{
@@ -345,3 +333,21 @@ button:hover{
 	width: 30px;
 }
 
+.feintText {
+    padding-top: 60px;
+    color: #838cad;
+    font-size: 14px;
+}
+
+.mediaTable{
+	padding-top: 20px
+}
+
+.mediaField{
+	opacity: 0.7;
+}
+
+
+.mediaField:hover{
+	opacity: 1.0;
+}
