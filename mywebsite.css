@@ -93,8 +93,8 @@ a, a:hover{
 }
 
 .fadeOut{
-	opacity: 0.7;
-	transition: all 0.5s ease-out;
+	opacity: 0.5;
+	transition: all 0.3s ease;
 }
 
 
@@ -168,6 +168,11 @@ button:hover{
 	background: white;
 	font-style: bold;
 	color: #009999;
+	-webkit-transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+	 -o-transition: color 0.5s linear;
+	 -ms-transition: color 0.5s linear;
+	 transition: all 0.5s linear;
 }
 
 
@@ -257,11 +262,11 @@ button:hover{
 #portfolioButton:hover{
 	background: white;
 	color: black;
-	-webkit-transition: color 1.0s ease-out;
-	-moz-transition: color 1.0s ease-out;
-	 -o-transition: color 1.0s ease-out;
-	 -ms-transition: color 1.0s ease-out;
-	 transition: color 1.0s ease-out;
+	-webkit-transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+	 -o-transition: color 0.5s linear;
+	 -ms-transition: color 0.5s linear;
+	 transition: all 0.5s linear;
 }
 
 #closingBanner{

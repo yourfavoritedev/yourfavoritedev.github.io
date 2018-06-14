@@ -1,10 +1,8 @@
-$("li a").on("mouseover", function(){
-	$("li a").toggleClass("fadeOut")
-	$(this).toggleClass("fadeOut")
+$("#closingBanner .navBtn").on("mouseover", function(){
+	$("#closingBanner .navBtn").addClass("fadeOut")
+	$(this).removeClass("fadeOut")
 })
 
-
-$("li a").on("mouseout", function(){
-	$("li a").toggleClass("fadeOut")
-	$(this).toggleClass("fadeOut")
+$("#closingBanner .navBtn").on("mouseout", function(){
+	$("#closingBanner .navBtn").removeClass("fadeOut")
 })
