@@ -1,13 +1,14 @@
 
-html, body{
-	overflow-x: hidden;
+html{
+	overflow: hidden;
+	height: 100%;
 }
 body{
-	font-family: calibri;
+	font-family: ubuntu;
 	margin: 0;
 	text-align: center;
-	overflow-x: hidden;
-
+	overflow: auto;
+	height: 100%;
 }
 
 a, a:hover{
@@ -94,7 +95,7 @@ a, a:hover{
 
 .fadeOut{
 	opacity: 0.5;
-	transition: all 0.3s ease;
+	transition: all 0.3s linear;
 }
 
 
@@ -222,8 +223,6 @@ button:hover{
 	padding-top: 60px;
 	padding-bottom: 80px;
 	font-family: exo;
-	overflow-y: hidden;
-	overflow-x: hidden;
 	color: white;
 	text-shadow: 10px 10px 20px black;
 }
@@ -247,8 +246,8 @@ button:hover{
 #servicesProvided p{
 	padding-bottom: 20px;
 	font-size: 20px;
-
 }
+
 #portfolioBtnForm{
 	padding-top: 50px;
 }
@@ -333,6 +332,7 @@ button:hover{
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 18px;
 }
 
 
@@ -344,8 +344,9 @@ div[class="feintText"] p{
 	opacity: 1.0;
 }
 
-.smallIMG{
+.mediaTable img{
 	width: 30px;
+	height: 28px;
 }
 
 .feintText {
@@ -365,4 +366,63 @@ div[class="feintText"] p{
 
 .mediaField:hover{
 	opacity: 1.0;
+}
+
+
+@media only screen and (max-width: 800px){
+	#sloganBottom{
+		vertical-align: middle;
+		color:white;
+		font-size: 40px;
+		line-height: normal;
+		font-weight: bold;
+		font-family: arial;
+		margin-top: 0px;
+		-webkit-touch-callout: none; /* iOS Safari */
+	    -webkit-user-select: none; /* Safari */
+	    -moz-user-select: none; /* Firefox */
+	    -ms-user-select: none; /* Internet Explorer/Edge */
+	    user-select: none; /*Non-prefixed version, currently*/
+	}
+	#mainContent h2{
+		padding-bottom: 30px;
+		color: #009999;
+		font-weight: bolder;
+		font-size: 40px;
+		font-family: exo;
+		text-shadow: 1px 1px 2px black;
+		text-transform: uppercase;
+	}
+	.bootstrap-override-navbar-brand img{
+		padding-left: 10px;
+		max-width: 80px;
+	}
+	.navbar-toggle {
+	    position: relative;
+	    float: right;
+	    padding: 9px 10px;
+	    margin-top: 22px;
+	    margin-right: 25px;
+	    margin-bottom: 8px;
+	    background-color: transparent;
+	    border-radius: 4px;
+	}
+	#mainContent{
+		font-size: 22px;
+		color: #001528;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#servicesProvided h2{
+		font-weight: bolder;
+		font-size: 40px;
+		padding-bottom: 50px;
+	}
+	#servicesProvided p{
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+
 }
