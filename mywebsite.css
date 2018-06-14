@@ -1,14 +1,13 @@
 
-html{
-	overflow: hidden;
-	height: 100%;
+html, body{
+	overflow-x: hidden;
 }
 body{
 	font-family: ubuntu;
 	margin: 0;
 	text-align: center;
-	overflow: auto;
-	height: 100%;
+	overflow-x: hidden;
+
 }
 
 a, a:hover{
@@ -42,6 +41,12 @@ a, a:hover{
 
 .bootstrap-override-navbar-brand img{
 	max-width: 80px;
+}
+
+.bootstrap-override-navbar-brand img:hover{
+	max-width: 80px;
+	transform: rotate(720deg);
+	transition: all 0.5s ease;
 }
 
 .navbar-default {
@@ -397,6 +402,8 @@ div[class="feintText"] p{
 		padding-left: 10px;
 		max-width: 80px;
 	}
+
+
 	.navbar-toggle {
 	    position: relative;
 	    float: right;
