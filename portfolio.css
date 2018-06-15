@@ -97,6 +97,11 @@ a, a:hover{
     border-radius: 4px;
 }
 
+.fadeOut{
+    opacity: 0.5;
+    transition: all 0.3s linear;
+}
+
 #mainHeader{
     padding-top: 250px;
     background-image: url(./images/particles.jpg);
