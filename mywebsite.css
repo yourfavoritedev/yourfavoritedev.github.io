@@ -15,6 +15,57 @@ a, a:hover{
 	text-decoration: none
 }
 
+#overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.loader{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    display: flex;
+    flex-direction: row;
+    background: black
+}
+.box{
+    display: block;
+    margin: 10px;
+    border: 1em solid #00ffcc;
+    border-radius: 100px;
+    opacity: 0;
+}
+.one{
+    animation: box-appear 3s linear infinite;
+}
+.two{
+    animation: box-appear 3s linear .5s infinite;
+}
+.three{
+    animation: box-appear 3s linear 1s infinite;
+}
+@keyframes box-appear{
+    0%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 1;
+    }
+    48%{
+        opacity: 1;
+    }
+    64%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 
 
 #funBanner{
@@ -258,9 +309,14 @@ button:hover{
 }
 
 #portfolioButton{
-	 border: white 2px solid;
-	 color: white; 
-	 font-size: 16px;
+	font-size: 16px;
+	color: white; 
+	border: white 2px solid;
+	font-family: arial black;
+	background: rgba(0, 0, 0, 0);
+	border: white solid 1px;
+	padding: 20px;
+	text-shadow: none;
 }
 
 #portfolioButton:hover{

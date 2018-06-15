@@ -1,3 +1,10 @@
+var overlay = document.querySelector("#overlay");
+
+window.addEventListener("load", function(){
+	overlay.style.display = "none"
+})
+
+
 $("#closingBanner .navBtn").on("mouseover", function(){
 	$("#closingBanner .navBtn").addClass("fadeOut")
 	$(this).removeClass("fadeOut")
