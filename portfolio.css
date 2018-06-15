@@ -1,0 +1,225 @@
+
+html, body{
+    overflow-x: hidden;
+}
+body{
+    font-family: nunito;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: rgb(0, 11, 33);
+    color: white;
+
+}
+
+a, a:hover{
+    color: black;
+    text-decoration: none
+}
+
+#mainHeader div[class="container"]{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.navbar-header{
+	margin-bottom: 20px;
+}
+
+.bootstrap-override-navbar-brand{
+	padding-left: 5px;
+	float: left;
+}
+
+.bootstrap-override-navbar-brand img{
+	max-width: 80px;
+}
+
+.bootstrap-override-navbar-brand img:hover{
+	max-width: 80px;
+	transform: rotate(720deg);
+	transition: all 0.5s ease;
+}
+
+.navbar-default {
+    border-color: transparent;
+    padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: solid 3px transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #2eeace;
+	border-bottom: #2eeace solid 3px;
+	-webkit-transition: color 0.5s ease-out;
+	-moz-transition: color 0.5s ease-out;
+	-o-transition: color 0.5s ease-out;
+	-ms-transition: color 0.5s ease-out;
+	transition: color 0.5s ease-out;
+	-webkit-transition: border-color 0.3s ease-out;
+}
+
+#activeBtn{
+    color: #2eeace;
+    border-bottom: #2eeace solid 3px;
+}
+
+
+.navbar-default .navbar-toggle {
+    border: solid 2px white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 22px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+#mainHeader{
+    padding-top: 250px;
+    background-image: url(./images/particles.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: nunito;
+    padding-bottom: 250px;
+}
+
+#mainHeader img{
+    padding-top: 25px;
+}
+
+#mainHeader h2{
+    font-size: 40px;
+    font-family: raleway;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+#mainHeader p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#projects{
+    padding-top: 60px;
+    text-align: left;
+    font-size: 18px;
+}
+
+#projects img{
+    width: 100%;
+    border: solid white 5px;
+    margin-bottom: 20px;
+}
+
+#projects img:hover{
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+#projects h2{
+    font-family: raleway;
+    padding-left: 10px;
+    margin-top: 0px;
+}
+
+#projects p{
+    padding-left: 10px;
+}
+
+#projects div[class="col-sm-6 col-xs-12"]{
+    padding-bottom: 75px;
+}
+
+hr{
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.techUsed{
+    padding-top: 25px;
+}
+
+@media only screen and (max-width: 800px){
+    .bootstrap-override-navbar-brand img{
+        padding-left: 10px;
+        max-width: 80px;
+    }
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 22px;
+        margin-right: 25px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        border-radius: 4px;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    #projects{
+        padding-top: 20px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #projects h2{
+        font-family: raleway;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    #projects p{
+        padding-left: 0px;
+    }
+
+    hr{
+        margin-left: 0px;
+        opacity: 0.5;
+    }
+    .reverse-column-order{
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    #projects div[class="col-sm-6 col-xs-12"]{
+        padding-bottom: 15px;
+    }
+
+    #projects img{
+        width: 100%;
+        border: solid white 5px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+}
