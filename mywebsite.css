@@ -7,6 +7,8 @@ body{
 	margin: 0;
 	text-align: center;
 	overflow-x: hidden;
+	background-image: url(./images/portfolioBG.jpg);
+	background-position: 50% 95%;
 
 }
 
@@ -73,7 +75,7 @@ a, a:hover{
 
 #funBanner{
 	padding-top: 8px;
-	background: #d5ede8;
+	background: #ddd;
 	font-family: trebuchet ms;
 	overflow-y: hidden;
 	font-size: 14px;
@@ -159,14 +161,14 @@ a, a:hover{
 
 
 #mainHeader{
-	background-image: url(https://i.imgur.com/kcHxFXT.gif);
+	background-image: url(./images/galaxy.jpg);
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	width: 100%;
 	margin: 0px;
+	opacity: 0.9;
 }
 
 
@@ -238,11 +240,12 @@ button:hover{
 
 #mainContent{
 	font-size: 28px;
-	color: #001528;
+	color: #fff;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: rgba(0, 12, 31, 0.90);
 }
 
 
@@ -278,7 +281,7 @@ button:hover{
 #servicesProvided{
 	margin-left: auto;
 	margin-right: auto;
-	background: #091a26;
+	background-color: rgba(0, 11, 33, 0.9);
 	padding-top: 60px;
 	padding-bottom: 80px;
 	font-family: exo;
@@ -335,7 +338,7 @@ button:hover{
 #closingBanner{
 	color: white;
 	font-size: 20px;
-	background: #1d1f26;
+    background-color: rgb(0, 16, 40);
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
@@ -475,7 +478,7 @@ div[class="feintText"] p{
 	}
 	#mainContent{
 		font-size: 22px;
-		color: #001528;
+		color: #fff;
 		padding-top: 60px;
 		padding-bottom: 60px;
 		margin-left: auto;
