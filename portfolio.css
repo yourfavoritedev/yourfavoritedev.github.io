@@ -86,7 +86,7 @@ a, a:hover{
 
 .bootstrap-override-navbar-brand img:hover{
 	max-width: 80px;
-	transform: rotate(720deg);
+	transform: rotate(360deg);
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
