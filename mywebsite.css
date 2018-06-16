@@ -460,6 +460,16 @@ div[class="feintText"] p{
 	    -ms-user-select: none; /* Internet Explorer/Edge */
 	    user-select: none; /*Non-prefixed version, currently*/
 	}
+	#sloganTop{
+		margin-top: 120px;
+		padding-bottom: 10px;
+		color:white;
+		font-size: 18px;
+		font-style: italic;
+		font-weight: bold;
+		font-family: serif;
+	}
+
 	#mainContent h2{
 		padding-bottom: 30px;
 		color: #009999;
@@ -505,7 +515,7 @@ div[class="feintText"] p{
 
 }
 
-@media screen only and (max-width: 450px){
+@media only screen and (max-width: 450px){
 	.loader{
 	    position: absolute;
 	    top: 40%;
@@ -515,18 +525,9 @@ div[class="feintText"] p{
 	    flex-direction: row;
 	    background: black
 	}
-	#sloganTop{
-		margin-top: 120px;
-		padding-bottom: 10px;
-		color:white;
-		font-size: 16px;
-		font-style: italic;
-		font-weight: bold;
-		font-family: serif;
-	}
 }
 
-@media screen only and (max-width: 400px){
+@media only screen and (max-width: 400px){
     .loader{
 	    position: absolute;
 	    top: 40%;
