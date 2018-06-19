@@ -1,5 +1,11 @@
 var overlay = document.querySelector("#overlay");
 var velocity = 0.5;
+var dogImgContainers = document.querySelectorAll("#dogBlog img");
+var breedDisplay = document.querySelector("#breedDisplay");
+var imageWrappers = document.querySelectorAll(".imagewrap");
+var wrappedImg = document.querySelectorAll(".imagewrap img");
+var embBtn = document.querySelectorAll(".embBtn");
+
 var dogs = [
 {
 	type: "Corgi",
@@ -48,9 +54,7 @@ var dogs = [
 }
 ]
 
-var dogImgContainers = document.querySelectorAll("#dogBlog img")
 
-var breedDisplay = document.querySelector("#breedDisplay")
 
 window.addEventListener("load", function(){
 	overlay.style.display = "none"
@@ -75,6 +79,25 @@ $(".mediaTable img").on("mouseover", function(){
 $(".mediaTable img").on("mouseout", function(){
 	$(".mediaTable img").removeClass("fadeOut")
 })
+
+
+for(var i = 0; i < imageWrappers.length; i++){
+	(function(i){
+		imageWrappers[i].addEventListener("mouseover", function(){
+		wrappedImg[i].classList.add("imgFade");
+		embBtn[i].classList.add("btnFadeIn");
+		})
+	}(i))
+}
+
+for(var i = 0; i < imageWrappers.length; i++){
+	(function(i){
+		imageWrappers[i].addEventListener("mouseout", function(){
+		wrappedImg[i].classList.remove("imgFade");
+		embBtn[i].classList.remove("btnFadeIn");
+		})
+	}(i))
+}
 
 
 
