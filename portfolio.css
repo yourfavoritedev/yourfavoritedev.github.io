@@ -284,6 +284,7 @@ hr{
 
 
 #closingBanner{
+    font-family: raleway;
     color: white;
     font-size: 20px;
     background-color: rgb(0, 16, 40);
@@ -295,7 +296,7 @@ hr{
 }
 
 #closingBanner h2{
-    font-family: impact; 
+    font-weight: bolder;    
     color: white;
     font-size: 50px;
     text-transform: uppercase;
@@ -306,7 +307,6 @@ hr{
 #unlockPotential{
     color: black;
     font-size: 50px;
-    font-family: impact;
     text-shadow: 1px 1px 20px black;
     text-transform: uppercase;
 }
@@ -353,6 +353,7 @@ hr{
 
 div[class="feintText"] p{
     padding-top: 50px;
+    font-family: montserrat;
 }
 
 .mediaField:hover{
