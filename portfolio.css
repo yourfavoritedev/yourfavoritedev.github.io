@@ -133,7 +133,12 @@ a, a:hover{
 
 
 .navbar-default .navbar-toggle {
-    border: solid 2px white;
+    border: transparent;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #2eeace;
 }
 
 .navbar-default .navbar-toggle .icon-bar {

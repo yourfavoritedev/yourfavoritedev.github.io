@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
     color: white;
     background-image: url(./images/portfolioBG.jpg);
-    background-position: 50% 250%;
+    background-position: 50% 235%;
 }
 
 a, a:hover{
@@ -129,7 +129,12 @@ a, a:hover{
 
 
 .navbar-default .navbar-toggle {
-    border: solid 2px white;
+    border: transparent;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #2eeace;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -208,7 +213,6 @@ a, a:hover{
 #unlockPotential{
     color: black;
     font-size: 50px;
-    font-family: raleway;
     text-shadow: 1px 1px 20px black;
     text-transform: uppercase;
 }
