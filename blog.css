@@ -96,6 +96,11 @@ a, a:hover{
     background-color: rgba(0, 11, 33, 0.9);
 }
 
+#navPane .container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: white;
     font-family: roboto;
@@ -108,7 +113,6 @@ a, a:hover{
     margin-top: 20px;
     margin-bottom: 15px;
 }
-
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {

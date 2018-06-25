@@ -94,11 +94,17 @@ a, a:hover{
 	-ms-transition: all 0.5s ease;
 }
 
+#navPane .container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .navbar-default {
     border-color: transparent;
     padding-top: 5px;
     background-color: rgba(0, 11, 33, 0.9);
 }
+
 
 .navbar-default .navbar-nav > li > a {
     color: white;
@@ -130,7 +136,6 @@ a, a:hover{
     color: #2eeace;
     border-bottom: #2eeace solid 3px;
 }
-
 
 .navbar-default .navbar-toggle {
     border: transparent;
