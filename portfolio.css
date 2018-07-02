@@ -421,7 +421,7 @@ div[class="feintText"] p{
 @media only screen and (max-width: 1000px){
     .embBtn{
         position: absolute;
-        top: 40%;
+        top: 38%;
         right: 23%;
         font-size: 20px;
         font-family: raleway;
@@ -510,7 +510,7 @@ div[class="feintText"] p{
     .embBtn{
         position: absolute;
         top: 45%;
-        right: 38%;
+        right: 37%;
         font-size: 20px;
         font-family: raleway;
         color: white;
@@ -539,44 +539,12 @@ div[class="feintText"] p{
     }    
 }
 
-@media only screen and (max-width: 700px){
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 36%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }         
-}
 
 @media only screen and (max-width: 700px){
     .embBtn{
         position: absolute;
         top: 45%;
-        right: 35%;
+        right: 36%;
         font-size: 20px;
         font-family: raleway;
         color: white;
@@ -643,7 +611,7 @@ div[class="feintText"] p{
     .embBtn{
         position: absolute;
         top: 45%;
-        right: 32%;
+        right: 30%;
         font-size: 20px;
         font-family: raleway;
         color: white;
@@ -676,7 +644,7 @@ div[class="feintText"] p{
     .embBtn{
         position: absolute;
         top: 45%;
-        right: 30%;
+        right: 28%;
         font-size: 20px;
         font-family: raleway;
         color: white;
@@ -758,6 +726,7 @@ div[class="feintText"] p{
     }            
 }
 
+
 @media only screen and (max-width: 400px){
     .loader{
 	    position: absolute;
@@ -771,7 +740,7 @@ div[class="feintText"] p{
     .embBtn{
         position: absolute;
         top: 45%;
-        right: 25%;
+        right: 24%;
         font-size: 20px;
         font-family: raleway;
         color: white;
@@ -789,7 +758,7 @@ div[class="feintText"] p{
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;    
-    }        
+    }
     .btnFadeIn{
         opacity: 1.0;
         transition: all 0.5 ease;
@@ -797,15 +766,24 @@ div[class="feintText"] p{
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;       
-    }
+    }     
 }
 
 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 360px){
+    .loader{
+	    position: absolute;
+	    top: 40%;
+	    padding-left: 30%;
+	    padding-right: 50%;
+	    display: flex;
+	    flex-direction: row;
+	    background: black
+	}
     .embBtn{
         position: absolute;
-        top: 45%;
-        right: 22%;
+        top: 43%;
+        right: 21%;
         font-size: 20px;
         font-family: raleway;
         color: white;
