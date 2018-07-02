@@ -346,3 +346,18 @@ div[class="feintText"] p{
 
 
 
+@media only screen and (min-width: 767px) and (max-width: 992px){
+	#dogBlog img{
+	    width: 100%;
+	    border: white solid 5px;
+	    height: 200px;
+	}	
+}
+
+@media only screen and (max-width: 767px){
+	#dogBlog img{
+	    width: 300px;
+	    border: white solid 5px;
+	    height: 300px;
+	}		
+}
