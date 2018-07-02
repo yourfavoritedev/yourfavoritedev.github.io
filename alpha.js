@@ -100,19 +100,15 @@ for(var i = 0; i < imageWrappers.length; i++){
 }
 
 
+$(window).scroll(function(){
+	parallax()
+})
 
-function update(){ 
-var pos = $(window).scrollTop(); 
-$("body").each(function() { 
-    var $element = $(this);
-    // subtract some from the height b/c of the padding
-    var height = $element.height()-18;
-    $(this).css('backgroundPosition', '50% ' + Math.round((height + pos) * velocity) +  'px'); 
-   }); 
- };
+function parallax(){
+	var wScroll = $(window).scrollTop()
 
- $(window).bind('scroll', update);
-
+	$("body").css("background-position", "center " + (wScroll * 0.75) + "px")
+}
 
 
 for(var i = 0; i < dogs.length; i++){

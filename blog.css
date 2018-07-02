@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
     color: white;
     background-image: url(./images/portfolioBG.jpg);
-    background-position: 50% 989px;
+    background-position: center 0px;
 }
 
 a, a:hover{
