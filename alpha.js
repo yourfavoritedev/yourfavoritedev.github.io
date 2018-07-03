@@ -5,6 +5,7 @@ var breedDisplay = document.querySelector("#breedDisplay");
 var imageWrappers = document.querySelectorAll(".imagewrap");
 var wrappedImg = document.querySelectorAll(".imagewrap img");
 var embBtn = document.querySelectorAll(".embBtn");
+var aligners = document.querySelectorAll(".aligner")
 
 var dogs = [
 {
@@ -55,9 +56,10 @@ var dogs = [
 ]
 
 
-
 window.addEventListener("load", function(){
 	overlay.style.display = "none"
+	$(".aligner").css("height", imageWrappers[0].offsetHeight)
+	$(".aligner").css("width", imageWrappers[0].offsetWidth)		
 })
 
 
@@ -81,23 +83,27 @@ $(".mediaTable img").on("mouseout", function(){
 })
 
 
-for(var i = 0; i < imageWrappers.length; i++){
+for(var i = 0; i < aligners.length; i++){
 	(function(i){
-		imageWrappers[i].addEventListener("mouseover", function(){
+		aligners[i].addEventListener("mouseover", function(){
 		wrappedImg[i].classList.add("imgFade");
-		embBtn[i].classList.add("btnFadeIn");
 		})
 	}(i))
 }
 
-for(var i = 0; i < imageWrappers.length; i++){
+for(var i = 0; i < aligners.length; i++){
 	(function(i){
-		imageWrappers[i].addEventListener("mouseout", function(){
+		aligners[i].addEventListener("mouseout", function(){
 		wrappedImg[i].classList.remove("imgFade");
-		embBtn[i].classList.remove("btnFadeIn");
 		})
 	}(i))
 }
+
+
+$(window).resize(function(){
+	$(".aligner").css("height", imageWrappers[0].offsetHeight)
+	$(".aligner").css("width", imageWrappers[0].offsetWidth)	
+})
 
 
 $(window).scroll(function(){

@@ -213,18 +213,54 @@ a, a:hover{
     position: relative;
 }
 
-.embBtn{
+.aligner{
+    margin: 0px auto;
+    width: 100%;
+    text-align: center !important;     
+    opacity: 0;
     position: absolute;
-    top: 40%;
-    right: 34%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0 !important;
+    box-sizing: border-box;
+    overflow-y: hidden;;
+    -webkit-transition: all 0.5s ease !important;
+    -moz-transition: all 0.5s ease !important;
+    -ms-transition: all 0.5s ease !important;
+    -o-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
+}
+
+.aligner:hover{
+    background: transparent;
+    opacity: 100;    
+}
+
+.button-container{  
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    left: 49%;
+    position: absolute;
+    top: 50%;
+    width: 100%;    
+}
+
+.button-container a:focus{
+    text-decoration: none;
+    color: #000;
+}
+
+.embBtn{    
     font-size: 20px;
     font-family: raleway;
     color: white;
-    opacity: 0;
     background: transparent;
     border: white solid 3px;
-    padding: 10px 15px;
-    transition: all 0.5 ease;
+    padding: 10px 15px;   
 }
 
 .embBtn:hover{
@@ -248,7 +284,6 @@ a, a:hover{
 #projects img{
     width: 100%;
     border: solid white 5px;
-    margin-bottom: 20px;
 }
 
 .imgFade{
@@ -260,14 +295,6 @@ a, a:hover{
     -ms-transition: all 0.5s ease;   
 }
 
-.btnFadeIn{
-    opacity: 1.0;
-    transition: all 0.5 ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;       
-}
 
 #projects h2{
     font-family: raleway;
@@ -394,62 +421,6 @@ div[class="feintText"] p{
     opacity: 1.0;
 }
 
-@media only screen and (max-width: 1200px){
-    .embBtn{
-        position: absolute;
-        top: 40%;
-        right: 30%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }            
-}
-
-@media only screen and (max-width: 1000px){
-    .embBtn{
-        position: absolute;
-        top: 38%;
-        right: 23%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }                
-}
 
 
 @media only screen and (max-width: 800px){
@@ -470,6 +441,9 @@ div[class="feintText"] p{
 }
 
 @media only screen and (max-width: 767px){
+    #projects div[class="col-sm-6 col-xs-12"]{
+        padding-bottom: 30px;
+    }    
     #projects{
         padding-top: 20px;
         padding-bottom: 60px;
@@ -506,171 +480,7 @@ div[class="feintText"] p{
         border: solid white 5px;
         margin-bottom: 10px;
         margin-top: 20px;
-    }
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 37%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
     }    
-}
-
-
-@media only screen and (max-width: 700px){
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 36%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }     
-}
-
-@media only screen and (max-width: 600px){
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 33%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }     
-}
-
-
-@media only screen and (max-width: 550px){
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 30%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }     
-}
-
-@media only screen and (max-width: 500px){
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 28%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }     
 }
 
 @media only screen and (max-width: 450px){
@@ -692,38 +502,7 @@ div[class="feintText"] p{
 	    padding-right: 50%;
 	    display: flex;
 	    flex-direction: row;
-	    background: black
-	}
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 26%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }            
+	    background: black      
 }
 
 
@@ -736,37 +515,7 @@ div[class="feintText"] p{
 	    display: flex;
 	    flex-direction: row;
 	    background: black
-	}
-    .embBtn{
-        position: absolute;
-        top: 45%;
-        right: 24%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }     
+	}  
 }
 
 
@@ -780,34 +529,5 @@ div[class="feintText"] p{
 	    flex-direction: row;
 	    background: black
 	}
-    .embBtn{
-        position: absolute;
-        top: 43%;
-        right: 21%;
-        font-size: 20px;
-        font-family: raleway;
-        color: white;
-        opacity: 0;
-        background: transparent;
-        border: white solid 3px;
-        padding: 10px 15px;
-        transition: all 0.5 ease;
-    }
-    .embBtn:hover{
-        background: white;
-        color: rgb(0, 11, 33);
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;    
-    }
-    .btnFadeIn{
-        opacity: 1.0;
-        transition: all 0.5 ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;       
-    }     
+    
 }
