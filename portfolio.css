@@ -224,7 +224,7 @@ a, a:hover{
     right: 0;
     top: 0 !important;
     box-sizing: border-box;
-    overflow-y: hidden;;
+    overflow-y: hidden;
     -webkit-transition: all 0.5s ease !important;
     -moz-transition: all 0.5s ease !important;
     -ms-transition: all 0.5s ease !important;
@@ -243,7 +243,7 @@ a, a:hover{
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    left: 49%;
+    left: 50%;
     position: absolute;
     top: 50%;
     width: 100%;    
