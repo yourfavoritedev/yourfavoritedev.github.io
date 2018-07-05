@@ -263,7 +263,8 @@ a, a:hover{
     padding: 10px 15px;   
 }
 
-.embBtn:hover{
+.embBtn:hover,
+.embBtn:focus{
     background: white;
     color: rgb(0, 11, 33);
     transition: all 0.5 ease;
