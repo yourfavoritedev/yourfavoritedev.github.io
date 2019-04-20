@@ -171,12 +171,11 @@ a, a:hover{
 
 .fadeOut{
 	opacity: 0.5;
-	transition: all 0.3s linear;
-	-webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-	-ms-transition: all 0.3s linear;
-
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
 }
 
 
@@ -383,6 +382,7 @@ button:hover{
 	font-size: 50px;
 	text-shadow: 1px 1px 20px black;
 	text-transform: uppercase;
+	transition: color 0.5s ease;
 }
 
 #unlockPotential:hover{
@@ -405,6 +405,7 @@ button:hover{
 	color: inherit;
 	text-decoration: none;
 	font-weight: bold;
+	transition: all 0.3s ease-out;
 }
 
 .navBtn:hover{
