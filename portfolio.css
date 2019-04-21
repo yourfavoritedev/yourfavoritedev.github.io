@@ -260,7 +260,8 @@ a, a:hover{
     color: white;
     background: transparent;
     border: white solid 3px;
-    padding: 10px 15px;   
+    padding: 10px 15px;
+    transition: all 0.5s ease;
 }
 
 .embBtn:hover,
@@ -285,6 +286,7 @@ a, a:hover{
 #projects img{
     width: 100%;
     border: solid white 5px;
+    transition: all 0.5s ease;
 }
 
 .imgFade{
@@ -347,6 +349,7 @@ hr{
     font-size: 50px;
     text-shadow: 1px 1px 20px black;
     text-transform: uppercase;
+    transition: color 0.5s ease-out;
 }
 
 #unlockPotential:hover{

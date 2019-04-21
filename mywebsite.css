@@ -124,6 +124,7 @@ a, a:hover{
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 15px;
+	transition: all 0.5s ease-out;    
 }
 
 
@@ -231,7 +232,7 @@ a, a:hover{
 }
 
 
-button{
+#mainHeader button{
 	font-family: arial black;
 	font-size: 16px;
 	color: white;
@@ -243,9 +244,10 @@ button{
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
      user-select: none; /*Non-prefixed version, currently*/
+     transition: all 0.5s linear;
 }
 
-button:hover{
+#mainHeader button:hover{
 	background: white;
 	font-style: bold;
 	color: #009999;
@@ -344,6 +346,7 @@ button:hover{
 	border: white solid 1px;
 	padding: 20px;
 	text-shadow: none;
+	transition: all 0.5s linear;	
 }
 
 #portfolioButton:hover{
@@ -431,13 +434,10 @@ div[class="feintText"] p{
 	font-family: montserrat;
 }
 
-.mediaField:hover{
-	opacity: 1.0;
-}
-
 .mediaTable img{
 	width: 30px;
 	height: 28px;
+	transition: all 0.5 ease;
 }
 
 .feintText {
@@ -452,13 +452,13 @@ div[class="feintText"] p{
 
 .mediaField{
 	opacity: 0.7;
+	transition: all 0.5s ease;
 }
-
 
 .mediaField:hover{
 	opacity: 1.0;
+	transition: all 0.5s ease;	
 }
-
 
 @media only screen and (max-width: 800px){
 	#sloganBottom{
