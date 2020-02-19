@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/yourfavoritedev.github.io/static/css/main.2e445ef2.chunk.css",
+    "main.js": "/yourfavoritedev.github.io/static/js/main.d4664f2e.chunk.js",
+    "main.js.map": "/yourfavoritedev.github.io/static/js/main.d4664f2e.chunk.js.map",
+    "runtime-main.js": "/yourfavoritedev.github.io/static/js/runtime-main.724acb28.js",
+    "runtime-main.js.map": "/yourfavoritedev.github.io/static/js/runtime-main.724acb28.js.map",
+    "static/js/2.4d1f3f5a.chunk.js": "/yourfavoritedev.github.io/static/js/2.4d1f3f5a.chunk.js",
+    "static/js/2.4d1f3f5a.chunk.js.map": "/yourfavoritedev.github.io/static/js/2.4d1f3f5a.chunk.js.map",
+    "index.html": "/yourfavoritedev.github.io/index.html",
+    "precache-manifest.fcc5b3a8d4e4163b7ea5dfb4bfbfb23d.js": "/yourfavoritedev.github.io/precache-manifest.fcc5b3a8d4e4163b7ea5dfb4bfbfb23d.js",
+    "service-worker.js": "/yourfavoritedev.github.io/service-worker.js",
+    "static/css/main.2e445ef2.chunk.css.map": "/yourfavoritedev.github.io/static/css/main.2e445ef2.chunk.css.map",
+    "static/js/2.4d1f3f5a.chunk.js.LICENSE.txt": "/yourfavoritedev.github.io/static/js/2.4d1f3f5a.chunk.js.LICENSE.txt",
+    "static/media/algocover.jpg": "/yourfavoritedev.github.io/static/media/algocover.9679548e.jpg",
+    "static/media/cash.png": "/yourfavoritedev.github.io/static/media/cash.67f6f3f8.png",
+    "static/media/d3cover.jpg": "/yourfavoritedev.github.io/static/media/d3cover.ca1aeb9a.jpg",
+    "static/media/dualshock.png": "/yourfavoritedev.github.io/static/media/dualshock.da000908.png",
+    "static/media/expensify.png": "/yourfavoritedev.github.io/static/media/expensify.a6fcd716.png",
+    "static/media/floqast.jpg": "/yourfavoritedev.github.io/static/media/floqast.972b1d85.jpg",
+    "static/media/hashtag.png": "/yourfavoritedev.github.io/static/media/hashtag.b27f566b.png",
+    "static/media/investcloud.jpg": "/yourfavoritedev.github.io/static/media/investcloud.b10abada.jpg",
+    "static/media/movie.png": "/yourfavoritedev.github.io/static/media/movie.3bbca59f.png",
+    "static/media/App.css": "/yourfavoritedev.github.io/static/media/particles.69308156.jpg",
+    "static/media/smiley.png": "/yourfavoritedev.github.io/static/media/smiley.5639a7e6.png",
+    "static/media/sony.png": "/yourfavoritedev.github.io/static/media/sony.4a7fca54.png",
+    "static/media/sonyuniverse.png": "/yourfavoritedev.github.io/static/media/sonyuniverse.a9f5c92d.png",
+    "static/media/systemcover.jpg": "/yourfavoritedev.github.io/static/media/systemcover.5cef7526.jpg",
+    "static/media/uci.jpg": "/yourfavoritedev.github.io/static/media/uci.f13e0ed0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.724acb28.js",
+    "static/js/2.4d1f3f5a.chunk.js",
+    "static/css/main.2e445ef2.chunk.css",
+    "static/js/main.d4664f2e.chunk.js"
+  ]
+}
