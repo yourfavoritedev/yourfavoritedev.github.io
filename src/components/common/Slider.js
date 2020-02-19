@@ -12,10 +12,8 @@ class Slider extends React.Component {
     this._nodes = new Map();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.currentNode !== this.state.currentNode) {
-      this.scrollToNode();
-    }
+  componentDidUpdate() {
+    this.scrollToNode();
   }
 
   renderChildren = () => {

@@ -24,10 +24,6 @@ body{
   color: #9980fa;
   text-decoration: none;;
 }
-.test-section {
-  height: 100vh;
-  border: 1px solid black;
-}
 .slider{
   position: relative;
 }
@@ -122,4 +118,26 @@ body{
   padding: 0;
   position: relative;
   width: 960px;
+}
+.changing-words .text-indicator {
+  font-size: 1.25em;
+  margin: 0px 3px;
+}
+.scalable-image{
+  margin: 50px 15px;
+}
+.contact-section .description {
+  font-size: 1.25em
+}
+.scalable-image img{
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.scalable-image img:hover{
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out
+}
+.flex-wrapper{
+  display: flex;
+  justify-content: center;
 }

@@ -9,11 +9,21 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: ${props => props.backgroundColor};
 `;
 
-const Section = ({ children, useParallax, backgroundImage }) => {
+const Section = ({
+  children,
+  useParallax,
+  backgroundImage,
+  backgroundColor,
+}) => {
   return (
-    <Container useParallax={useParallax} backgroundImage={backgroundImage}>
+    <Container
+      useParallax={useParallax}
+      backgroundImage={backgroundImage}
+      backgroundColor={backgroundColor}
+    >
       {children}
     </Container>
   );
